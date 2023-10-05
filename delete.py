@@ -275,37 +275,61 @@ print(students["child2"]["name"])
 print(students["child1"]["class"])
 print(students["child3"]["section"])
 
+import random
 
+a= random.randrange(1,500)
+b=200
+c= random.randrange(1,600)
+d= random.randrange(1,700)
 
+if a>b:
+    print("a is greater than b")
+    
+elif a==b:
+    print("a is equals to b")
+else:
+    print("No b is greater than a")
 
+#Write short hand Python command 
 
+print("a is greater than b") if a > b else print("b is greater than a")
 
+if a>b and c>d:
+    print("Great")
+else:
+    print("Oh no")
 
+if a>b or c>d:
+    print("Atleast one is greater")
+else:
+    print("it is of no use ") 
 
+#using if statement-----------------------------------------------------------------
+if not a>b:
+    print("yay")
+else:
+    print("No!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 
+x= 12
 
+if x>10:
+    print("above 10")
+    if x>20:
+        print("and also above 20!")
+    else:
+        print("but not above 20.")
 
+#while loop
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+i=1
+while i < 6:
+    print(i)
+    i += 1
+#Ending the loop on 3
+i=1
+while i < 6:
+    print(i)
+    if i==3:
+        break
+    i+=1
 
